@@ -1,6 +1,6 @@
 # Sample AEM project template
 
-This is a sample project for integration kotlin in your maven based AEM project. Tutorial can be found [here](https://andreishilov.github.io/kotlin-aem-maven/) This project created with a standard maven AEM archetype.
+This is a sample project for integration kotlin in your maven based AEM project. Tutorial can be found [here](https://andreishilov.github.io/blog/kotlin-aem-maven/) This project created with a standard maven AEM archetype.
 
 
 ## Modules
