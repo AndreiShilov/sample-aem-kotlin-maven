@@ -2,5 +2,6 @@
 <workspaceFilter version="1.0">
     <filter root="/apps/aem-ktln"/>
     <filter root="/apps/sling" />
+    <filter root="/apps/granite" />
     <filter root="/etc/designs/aem-ktln"/>
 </workspaceFilter>
