@@ -1,0 +1,11 @@
+<div class="aspectRatioPlaceholder" data-sly-test="${properties.fileReference}"
+     data-sly-use.model="com.asd.aem.ktln.core.models.BluredImageModel">
+    <div class="aspectRatioPlaceholder-fill"></div>
+    <div class="progressiveMedia" data-width="${model.width}" data-height="${model.height}">
+        <img class="progressiveMedia-thumbnail" src="${model.smallImagePath}" alt=""/>
+        <canvas class="progressiveMedia-canvas"></canvas>
+        <img class="progressiveMedia-image" data-src="${model.originalImagePath}" alt=""/>
+    </div>
+</div>
+
+<div data-sly-test="${wcmmode.edit && !properties.fileReference}" class="cq-placeholder" data-emptytext="Blured Image"></div>
