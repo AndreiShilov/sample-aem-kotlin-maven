@@ -74,6 +74,11 @@
             <artifactId>osgi.annotation</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+        </dependency>
+
         <!--Kotlin dependency-->
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/content/aem-ktln"/>
-    <filter root="/content/dam/aem-ktln"/>
+    <filter root="/content/aem-ktln" mode="merge"/>
+    <filter root="/content/dam/aem-ktln" mode="merge"/>
 </workspaceFilter>
