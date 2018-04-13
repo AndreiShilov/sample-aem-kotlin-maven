@@ -2,5 +2,11 @@
     <div>
         ${model.text}
     </div>
+</sly>
 
+<sly data-sly-use.cookieModel="com.asd.aem.ktln.core.models.BasicCookieModel">
+    <div>
+        <h2>${cookieModel.wcmmode}</h2>
+        <h2>${cookieModel.myCustomCookieName}</h2>
+    </div>
 </sly>
