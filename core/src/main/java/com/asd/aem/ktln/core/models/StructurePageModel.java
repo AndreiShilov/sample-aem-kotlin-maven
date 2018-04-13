@@ -27,7 +27,7 @@ import com.adobe.cq.export.json.SlingModelFilter;
                 "wcm/foundation/components/parsys"
         }, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL,
         adapters = {ContainerComponent.class, Component.class})
-@Exporter(name =ExporterConstants.SLING_MODEL_EXPORTER_NAME, extensions = ExporterConstants.SLING_MODEL_EXTENSION, selector = "custom")
+@Exporter(name =ExporterConstants.SLING_MODEL_EXPORTER_NAME, extensions = ExporterConstants.SLING_MODEL_EXTENSION)
 @XmlRootElement
 public class StructurePageModel implements ContainerComponent {
 
