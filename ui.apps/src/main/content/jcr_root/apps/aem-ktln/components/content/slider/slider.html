@@ -1,0 +1,12 @@
+<div data-component="Slider">
+    <slider array='["https://www.thehappycatsite.com/wp-content/uploads/2017/10/best-treats-for-kittens.jpg","https://www.thehappycatsite.com/wp-content/uploads/2018/03/cat-puns-header.jpg"]'
+            inline-template>
+        <div>
+            <picture>
+                <img :src="image" alt="">
+            </picture>
+            <button @click="nextSlide">Next Slide</button>
+            <span>{{index}}</span>
+        </div>
+    </slider>
+</div>
