@@ -9,7 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "vue": "^2.5.16"
+    "vue": "^2.5.16",
+    "vue-easy-slider": "^3.2.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

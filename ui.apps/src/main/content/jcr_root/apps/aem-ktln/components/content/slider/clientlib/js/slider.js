@@ -1,8 +1,9 @@
 import Vue from 'vue';
+import { Slider, SliderItem } from 'vue-easy-slider'
 
-class Slider {
+class CustomSlider {
     static register() {
-        Vue.component('slider', {
+        Vue.component('custom-slider', {
             props: ['array'],
             methods: {
                 nextSlide() {
@@ -20,9 +21,13 @@ class Slider {
                 image(){
                     return this.slides[this.index]
                 }
+            },
+            components:{
+                Slider,
+                SliderItem
             }
         });
     }
 }
 
-export default Slider
+export default CustomSlider
