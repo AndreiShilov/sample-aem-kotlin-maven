@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import TestComponent from './test.ts'
 
 class KotlinText {
     static register() {
@@ -7,7 +8,7 @@ class KotlinText {
             template: '<button @click="addLetter">{{buttonText}}</button>',
             methods: {
                 addLetter() {
-                    this.buttonText = this.buttonText + 'a';
+                    this.buttonText = this.buttonText + TestComponent.toLowerCase(this.buttonText);
                 }
             },
             data() {

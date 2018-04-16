@@ -14,6 +14,7 @@ function startApp() {
 
         new Vue({el: el});
     });
+
 }
 
 document.addEventListener("DOMContentLoaded", startApp);

@@ -8,20 +8,15 @@ module.exports = {
     },
     output: {
         filename: '[name].js',
-        // path: '../../../target/classes/etc/designs/aem-ktln/clientlib-site/js'
-        // path: path.resolve(__dirname, 'jcr_root/etc/designs/aem-ktln/clientlib-site/js')
         path: path.resolve(__dirname, './target/classes/etc/designs/aem-ktln/clientlib-site/js')
     },
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.(ts|js)$/,
                 exclude: /(node_modules|bower_components)/,
                 use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['es2015']
-                    }
+                    loader: 'ts-loader'
                 }
             }
         ]
