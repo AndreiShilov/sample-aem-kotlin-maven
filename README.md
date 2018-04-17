@@ -52,8 +52,25 @@ There are three levels of testing contained in the project:
     in the browser, open the page in 'Developer mode', open the left panel and switch to the 'Tests' tab and find the generated 'MyName Tests' and run them.
 
 
+## Testing on AEM
+
+After the applications is successfully build and deplyed to AEM, you can view the sample content and components that are built as part of this sample.
+
+* Login to AEM, like http://localhost:4502
+* Go to Navigation > Sites > aem-ktln (This is the sample content package. You can find the contents at 'sample-aem-kotlin-maven/ui.content/src/main/content/jcr_root/content/aem-ktln/en/' )
+* Select English > Edit. As below:
+![sample-aem-kotlin-content](https://user-images.githubusercontent.com/902972/38891467-10b3674a-424a-11e8-8b31-785ee5aef27f.png)
+
+* Default components built along with this sample, visible in the left menu. As below:
+![sample-aem-kotlin-components](https://user-images.githubusercontent.com/902972/38891466-107a3934-424a-11e8-9d50-e168b4dafbb9.png)
+
+
 ## Maven settings
 
 The project comes with the auto-public repository configured. To setup the repository in your Maven settings, refer to:
 
     http://helpx.adobe.com/experience-manager/kb/SetUpTheAdobeMavenRepository.html
+
+
+
+
