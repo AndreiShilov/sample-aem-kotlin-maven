@@ -15,7 +15,7 @@ public class XmlExporter implements ModelExporter {
 
     @Override
     public boolean isSupported(Class<?> clazz) {
-        return true;
+        return clazz.equals(String.class);
     }
 
     @Override
