@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.Map;
 
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
 
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
@@ -28,7 +27,6 @@ import com.adobe.cq.export.json.SlingModelFilter;
         }, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL,
         adapters = {ContainerComponent.class, Component.class})
 @Exporter(name =ExporterConstants.SLING_MODEL_EXPORTER_NAME, extensions = ExporterConstants.SLING_MODEL_EXTENSION)
-@XmlRootElement
 public class StructurePageModel implements ContainerComponent {
 
     private List<? extends Component> childrenModels;
@@ -71,13 +69,11 @@ public class StructurePageModel implements ContainerComponent {
     }
 
     @Override
-    @XmlElement
     public String getName() {
         return component.getName();
     }
 
     @Override
-    @XmlElement
     public Map<String, Object> getConfig() {
         return slingModelFilter.filterProperties(pageProperties);
     }
