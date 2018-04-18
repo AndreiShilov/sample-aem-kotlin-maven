@@ -3,7 +3,7 @@ import components from './components.js'
 
 function startApp() {
 
-    components.forEach(func => func());
+    components.forEach(cmp => Vue.component(cmp.name, cmp.component));
 
     const elements = document.querySelectorAll('[data-component]');
     ([]).forEach.call(elements, (el) => {

@@ -1,7 +1,7 @@
-import Vue from 'vue';
 
-function kotlintext() {
-    Vue.component('kotlintext', {
+const kotlintext = {
+    name: 'kotlintext',
+    component: {
         props: ['text'],
         template: '<button @click="addLetter">{{buttonText}}</button>',
         methods: {
@@ -14,7 +14,7 @@ function kotlintext() {
                 buttonText: this.text
             }
         }
-    });
+    }
 }
 
 export default kotlintext

@@ -1,7 +1,8 @@
 import Vue from 'vue';
 
-function slider() {
-    Vue.component('slider', {
+const slider = {
+    name: 'slider',
+    component: {
         props: ['array'],
         methods: {
             nextSlide() {
@@ -20,7 +21,7 @@ function slider() {
                 return this.slides[this.index]
             }
         }
-    });
+    }
 }
 
 export default slider

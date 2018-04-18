@@ -1,7 +1,7 @@
-import Vue from 'vue';
 
-function counter() {
-    Vue.component('counter', {
+const counter = {
+    name: 'counter',
+    component: {
         props: ['number', 'buttonText'],
         template: `<div>
                  <button @click="increment">{{buttonText}}</button>
@@ -18,7 +18,7 @@ function counter() {
             }
         }
 
-    })
+    }
 }
 
 export default counter
